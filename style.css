@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar img {
+    max-height: 57px;
+    margin: 0 0px;
+}
+
+.navbar .center-text {
+    color: white;
+    font-size: 1.2em;
+    flex-grow: 1;
+    text-align: center;
+}
+.alert{
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    height: 2em;
+
+}
+.text{
+    color: white;
+    font-size: 1.2em;
+    text-align: left;
+    background-color: red;
+    font-weight:bold;
+    padding: 1%;
+}
+.movingtext{
+        padding: 1%;
+        font-weight: bold;
+        color: red;
+        white-space: nowrap;
+         animation: moving 5s ease-in-out 1s infinite normal;
+}
+@keyframes moving {
+from{
+    transform: translateX(150%);
+}
+to{
+    transform: translateX(0%);
+}
+}
+.image {
+    height: 20rem;
+    background-image: url(1.jpg);
+    background-size: 100% 100%;
+    animation: changeImage 44s ease-in infinite;
+}
+
+@keyframes changeImage {
+    0% {
+        background-image: url(1.JPG);
+    }
+    10% {
+        background-image: url(2.JPG);
+    }
+    20% {
+        background-image: url(3.jpg);
+    }
+    30% {
+        background-image: url(4.jpg);
+    }
+    40% {
+        background-image: url(5.jpg);
+    }
+    50% {
+        background-image: url(6.JPG);
+    }
+    60% {
+        background-image: url(7.jpg);
+    }
+    70% {
+        background-image: url(8.jpg);
+    }
+    80% {
+        background-image: url(9.JPG);
+    }
+    90% {
+        background-image: url(10.jpg);
+    }
+    100% {
+        background-image: url(11.jpg);
+    }
+}
+.registration{
+    color: white;
+    margin: 70px 10px -20px 20px;
+    text-align: center;
+}
+.col-md-6mn{
+    text-align: center;
+}
+.col-md-6mn label{
+    color: white;
+    margin-left: 6%;
+   text-align: center;
+    
+}
+.detail {
+    background-color: #242222;
+    margin: 10% 15%;
+    height: 30rem;
+    width: 70%;
+    display: grid;
+}
+
+.heading {
+    background-color: #242222;
+    color: white;
+    height: 100%;
+    text-align: center;
+    
+}
