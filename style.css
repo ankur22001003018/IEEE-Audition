@@ -2,6 +2,9 @@ body {
     margin: 0;
     background-color: black;
     font-family: 'Arial', sans-serif;
+    background-image: url("img\ back.PNG");
+    background-size: 100%;
+    background: flex;
 }
 
 .navbar {
@@ -19,8 +22,10 @@ body {
 }
 
 .navbar .center-text {
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.5em;
     flex-grow: 1;
     text-align: center;
 }
@@ -32,6 +37,9 @@ body {
 
 }
 .text{
+    border-radius: 2px;
+     display: flex;
+     align-items: center;
     color: white;
     font-size: 1.2em;
     text-align: left;
@@ -40,22 +48,28 @@ body {
     padding: 1%;
 }
 .movingtext{
+    display: flex;
+    align-items: center;
         padding: 1%;
         font-weight: bold;
         color: red;
         white-space: nowrap;
-         animation: moving 5s ease-in-out 1s infinite normal;
+         animation: moving 5s ease-in-out 0.5s infinite normal;
 }
 @keyframes moving {
 from{
-    transform: translateX(150%);
+    transform: translateX(90vw);
 }
 to{
     transform: translateX(0%);
 }
 }
 .image {
-    height: 20rem;
+    border-radius:5px ;
+   display: flex;
+   margin: auto;
+    height: 50vw;
+    width: 80vw;
     background-image: url(1.jpg);
     background-size: 100% 100%;
     animation: changeImage 44s ease-in infinite;
@@ -97,8 +111,12 @@ to{
     }
 }
 .registration{
-    color: white;
-    margin: 70px 10px -20px 20px;
+    text-shadow: #242222;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    margin: 20px 10px -20px 20px;
     text-align: center;
 }
 .col-md-6mn{
@@ -119,9 +137,10 @@ to{
 }
 
 .heading {
+    position: relative;
+    text-align: left;
     background-color: #242222;
     color: white;
     height: 100%;
     text-align: center;
-    
 }
